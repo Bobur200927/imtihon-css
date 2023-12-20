@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+
+    $font_size:70px;
+    $font_size2:45px;
+    $padding: 50px;
+    $font-family: 'Rancho', cursive;
+    $font-family2: 'Josefin Sans', sans-serif;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+    // Header
+
+    .header{
+
+        padding: $padding;
+        .header2{
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            padding-bottom: 30px;
+            
+            h1{
+                font-size: $font_size;
+                font-family: $font-family;
+            }
+        }
+
+    }
+    .menu {
+        display: none;
+        margin-top: -100px;
+    }
+
+
+    // Head
+
+    .head{
+        display: flex;
+        justify-content: space-between;
+        padding: $padding;
+
+        .head_left{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 50px;
+
+            .head2{
+                h1{
+                    font-size:$font_size2;
+                    font-family: $font-family2;
+
+                    span{
+                        color: #2A9D8F;
+                    }
+                }
+            }
+
+            .head3{
+                display: flex;
+                gap: 60px;
+
+                button{
+                    padding: 20px 35px;
+                    background-color: rgba(244, 162, 97, 1);
+                    border-radius: 5px;
+                    border: none;
+                    box-shadow: 5px 5px 10px rgba(244, 162, 97, 1);
+                    color: #fff;
+                    cursor: pointer;
+                    transition: all .6s ease;
+                }
+
+                button:hover{
+                    transform: rotate(360deg) scale(1.5);
+                }
+
+                button:active{
+                    background-color: rgb(201, 129, 70);
+                }
+            }
+
+            .head4{
+                display: flex;
+                gap: 100px;
+
+                .first{
+                    i{
+                        padding: 0px 80px 0px 0px;
+                        border-right: 2px solid #000;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+    // Stomach
+
+    .stomach_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0px;
+        background-color: rgba(239, 239, 239, 1);
+        padding: $padding;
+
+        .stomach_header{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            h1{
+                font-size: $font_size;
+                font-family: $font-family;
+            }
+
+            p{
+                color: red;
+            }
+        }
+
+        .stomach_head{
+
+            display: flex;
+            gap: 100px;
+
+            .stomach{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                justify-content: center;
+                max-width: 450px;
+
+                .color_red{
+                    color: red; 
+                    padding-bottom: 20px;
+                    border-bottom: 2px solid gray;
+                }
+
+                h1{
+                    font-size: $font_size2;
+                    font-family: $font-family2;
+                    padding-bottom: 5px;
+                    border-bottom: 2px solid gray;
+                }
+
+                button{
+                    padding:10px;
+                    border-radius:10px;
+                    border: none;
+                    width: 150px;
+                    background-color: rgba(42, 157, 143, 1);
+                }
+
+                button:hover{
+                    transform: scale(1.5);
+                }
+            }
+
+            .stomach2{
+                width: 100%;
+            }
+        }
+    }
+
+    // Neck
+
+    .neck_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        padding: $padding;
+
+        .neck_header{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+
+            h1{
+                font-size: $font_size;
+                font-family: $font-family;
+            }
+
+            p{
+                color: red;
+            }
+        }
+
+        .neck_head{
+            display: flex;
+            gap: 120px;
+
+            .neck{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 30px;
+
+                h1{
+                    font-size: $font_size2;
+                    font-family: $font-family2;
+                }
+
+                img{
+                    width: 250px;
+                }
+
+                .first{
+                    padding-bottom: 30px;
+                    border-bottom: 2px solid gray;
+                }
+            }
+        }
+    }
+
+    // Chest
+
+    .chest_container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: $padding;
+        
+        p{
+            margin: auto;
+            color: red;
+        }
+
+        h1{
+            margin: auto;
+            font-size: $font_size;
+            font-family: $font-family;
+        }
+
+        img{
+            position: relative;
+            width: 100%;
+
+            ::after{
+                position: absolute;
+                content: "Este es un simple texto de relleno solo esta para rellenar, y mostrar el lugar donde iria un texto real de la pagina cuando este hecha en su totalidad";
+
+                color: #fff;
+                margin: 50px 30px;
+            }
+        }
+    }
+
+    // Hand
+
+    .hand_container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: $padding;
+
+        .hand_header{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            
+            p{
+                color: red;
+            }
+
+            h1{
+                font-size: $font_size;
+                font-family: $font-family;
+            }
+        }
+
+        .hand_head{
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+    // Finger
+
+    .finger_relative{
+        .relative{
+            position: relative;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        .absolute{
+            position: absolute;
+            width: 450px;
+            right: 200px;
+            margin-top: 100px;
+        }
+    }
+
+    // Foot
+
+    .foot_container{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding: $padding;
+        background-color: rgba(51, 51, 51, 1);
+        color: #ffffff;
+        margin-top: 200px;
+
+        .foot_header{
+            display: flex;
+            justify-content: space-around;
+
+            .foot_left{
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+
+                .foot_left_top{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 50px;
+
+                    h1{
+                        font-size: $font_size;
+                        font-family: $font-family;
+                    }
+                }
+
+                .foot_left_bottom{
+                    display: flex;
+                    gap: 20px;
+                }
+            }
+
+            .foot{
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                h3{
+                    color: rgba(231, 111, 81, 1);
+                    padding-bottom: 20px;
+                    border-bottom: 2px solid gray;
+                }
+            }
+
+            .foot_right{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                h3{
+                    color: rgba(231, 111, 81, 1);
+                    padding-bottom: 10px;
+                    border-bottom: 2px solid gray;
+                }
+            }
+        }
+
+        .foot_head{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+@media (max-width: 1140px) {
+
+    // Head
+
+    .head_img{
+        img{
+            width: 80%;
+        }
+    }
+
+    // Stomach
+
+    .stomach2{
+        img{
+            width: 250px;
+        }
+    }
+
+    // Neck
+
+    .neck_container{
+        .neck_head{
+            .neck{
+                img{
+                    width: 150px;
+                }
+            }
+        }
+    }
+
+    // Chest
+
+    .chest_container{
+        img{
+            width: 100%;
+        }
+    }
+
+    // Hand
+
+    .hand_container{
+        .hand_head{
+            img{
+                width: 200px;
+            }
+        }
+    }
+
+    // Finger
+
+        .relative{
+            width: 100%;
+        }
+
+        .absolute{
+            width: 50%;
+            right: 100px;
+            margin-top: 300px;
+        }
+
+        // Foot
+
+        .foot_container{
+            margin-top: 300px;
+        }
+
+}
+
+@media (max-width: 800px) {
+
+        // Header
+
+    .header2{
+        li{
+            display: none;
+        }
+
+        h2{
+            justify-content: start;
+        }
+    }
+
+    .menu{
+        display: flex;
+        justify-content: end;
+    }
+
+    // Head
+
+    .head{
+        flex-direction: column;
+        gap: 30px;
+
+        .head_img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+        }
+    }
+
+    // Stomach
+
+    .stomach_head{
+        flex-direction: column;
+
+        .stomach2{
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    // Neck
+
+    .neck_container{
+        .neck_head{
+            flex-direction: column;
+            
+    
+            .neck{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    // Chest
+
+    .chest_container{
+        img{
+            width: 100%;
+        }
+    }
+
+    // Hand
+
+    .hand_container{
+        .hand_head{
+            flex-direction: column;
+            gap: 50px;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    // Finger
+
+    .relative{
+        height: 1000px;
+        object-fit: cover;
+    }
+
+    .absolute{
+        left: 50px;
+    }
+
+    // Foot
+
+    .foot_container{
+        margin-top: 0px;
+    }
+
+    .foot_header{
+        flex-direction: column;
+        justify-content: left;
+    }
+
+}
+
