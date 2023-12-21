@@ -191,15 +191,23 @@
   font-size: 70px;
   font-family: "Rancho", cursive;
 }
-.chest_container img {
+.chest_container .chest_head {
   position: relative;
-  width: 100%;
+  background-image: url(assets/pexels-ella-olsson-1640770\ 1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  width: 80%;
+  margin: auto;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.chest_container img ::after {
-  position: absolute;
-  content: "Este es un simple texto de relleno solo esta para rellenar, y mostrar el lugar donde iria un texto real de la pagina cuando este hecha en su totalidad";
+.chest_container .chest_head p {
   color: #fff;
-  margin: 50px 30px;
+  font-size: 20px;
 }
 
 .hand_container {
@@ -227,16 +235,62 @@
   justify-content: space-around;
 }
 
-.finger_relative .relative {
+.finger_relative {
   position: relative;
-  margin-left: 0px;
-  margin-right: 0px;
+  background-image: url(assets/pexels-ketut-subiyanto-4350114\ \(1\)\ 1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.finger_relative .absolute {
+.finger_relative .finger_header {
   position: absolute;
-  width: 450px;
-  right: 200px;
-  margin-top: 100px;
+  top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8196078431);
+  color: white;
+  gap: 20px;
+  padding: 30px;
+  width: 400px;
+}
+.finger_relative .finger_header p {
+  color: red;
+}
+.finger_relative .finger_header h1 {
+  font-size: 70px;
+  font-family: "Rancho", cursive;
+}
+.finger_relative .finger_header input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+}
+.finger_relative .finger_header textarea {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+}
+.finger_relative .finger_header button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 150px;
+  background-color: rgb(42, 157, 143);
+}
+.finger_relative .finger_header button:hover {
+  transform: scale(1.5);
+}
+.finger_relative .finger_header .finger_head {
+  display: flex;
+  gap: 30px;
 }
 
 .foot_container {
@@ -246,7 +300,6 @@
   padding: 50px;
   background-color: rgb(51, 51, 51);
   color: #ffffff;
-  margin-top: 200px;
 }
 .foot_container .foot_header {
   display: flex;
@@ -312,14 +365,6 @@
   .hand_container .hand_head img {
     width: 200px;
   }
-  .relative {
-    width: 100%;
-  }
-  .absolute {
-    width: 50%;
-    right: 100px;
-    margin-top: 300px;
-  }
   .foot_container {
     margin-top: 300px;
   }
@@ -366,14 +411,6 @@
   }
   .hand_container .hand_head img {
     width: 100%;
-  }
-  .relative {
-    height: 1000px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .absolute {
-    left: 50px;
   }
   .foot_container {
     margin-top: 0px;
